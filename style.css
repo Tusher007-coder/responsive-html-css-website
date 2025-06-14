@@ -7,3 +7,163 @@
 body{
     font-family: montserrat;
 }
+nav{
+    display: flex;
+    background-color: #1C2833;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 80px;
+
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+nav ul{
+    display: flex;
+    
+    
+}
+nav ul li{
+     list-style-type: none;
+     margin: 0 8px;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+
+nav ul li a:hover, .active{    
+    background-color: #566573;
+    
+}
+#click{
+    display: none;
+}
+.menu-btn{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive work start */
+@media only screen and (max-width: 940px) {
+    .menu-btn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        background-color: #17202A;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+        transition: 0.5s ease;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    
+    nav ul li{
+        margin: 50px 0px;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+    nav ul li a:hover,  nav ul li a.active{
+        background: none;
+        color: red;
+    }
+}
+
+/* header section code start */
+
+header{
+    background-image: url(images/bg1.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* main section start here */
+
+.service-title{
+    text-align: center;
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    padding: 50px 0;
+    letter-spacing: 0.2em;
+}
+#first-section{
+    background-color: #16213E;
+}
+#service-parent{
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    grid-gap: 25px;
+    padding-bottom: 100px;
+}
+.single-service{
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+}
+.single-service i{
+    font-size: 40px;
+}
+.single-service h2{
+    margin: 10px 0;
+    font-weight: bold;
+}
+.single-service p{
+    font-weight: 500;
+}
+/* first-section media query start */
+
+@media only screen and (max-width: 688px) {
+    #service-parent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        width: 100%;
+    }
+    }
+
+@media only screen and (min-width: 689px) and (max-width: 1099px) {
+     /* service section code start */
+     #service-parent{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+          width: 100%;
+     }
+      }
+     /* service section code finished */
