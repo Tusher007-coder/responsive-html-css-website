@@ -190,16 +190,79 @@ header{
     margin-top: 40px;
 }
 
+/* Second section code finish  */
+
+
+/* Third section code start */
+
+#third-section{
+    background-image: url(images/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 150px 0;
+}
+#about-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    color: white;
+}
+.more-about-vanilla h4{
+   margin-bottom: 20px;
+   font-size: 20px;
+
+}
+.more-about-vanilla ul{
+    margin: 20px 0;
+}
+.more-about-vanilla a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: yellow;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#about-single-items-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+.about-single-items{
+    background-color: #EAECEE;
+    color: black;
+    padding: 40px 20px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid lightgreen;
+}
+.about-single-items h4{
+    font-size: 20px;
+    padding: 10px 0 20px 0;
+}
+
+
 
 /* first-section media query start */
 
 @media only screen and (max-width: 688px) {
+    /* service section code start */
     #service-parent{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
         width: 100%;
     }
+
+    /* service section code finish */
+
+    /* smart section code start */
     #smart-parent{
         display: block;
         margin-left: 30px;
@@ -209,6 +272,28 @@ header{
         width: 100%;
         margin-bottom: 50px;
     }
+    /* smart section code finish */
+    /* more about vanilla anchor tag start */
+    .more-about-vanilla a{
+        margin-bottom: 50px;
+    }
+     /* more about vanilla anchor tag finish */
+
+    /* about section code start */
+    #about-parent{
+    display: block;
+    margin-right: 30px;
+    margin-left: 30px;
+    }
+    /* about section code finish */
+
+    /* about-single-items-parent code start */
+    #about-single-items-parent{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    }
+/* about-single-items-parent code finish */
 }
 
 
@@ -222,6 +307,9 @@ header{
           grid-gap: 20px;
           width: 100%;
      }
+      /* service section code finished */
+
+       /* smart section code start */
      #smart-parent{
         display: block;
         margin-left: 50px;
@@ -231,5 +319,29 @@ header{
         width: 100%;
         margin-bottom: 30px;
     }
+     /* smart section code finished */
+
+     /* more about vanilla anchor tag start */
+    .more-about-vanilla a{
+        margin-bottom: 70px;
+    }
+     /* more about vanilla anchor tag finish */
+
+     /* about section code start */
+    #about-parent{
+    display: block;
+    margin-right: 70px;
+    margin-left: 70px;
+    
 }
-     /* service section code finished */
+/* about section code finish */
+
+ /* about-single-items-parent code start */
+    #about-single-items-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    }
+/* about-single-items-parent code finish */
+}
+    
