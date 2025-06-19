@@ -368,6 +368,43 @@ form p{
 }
 /* contact section finish */
 
+/* match project section start */
+#sixth-section{
+    background-color: #07254F;
+    color: white;
+    padding: 100px 0;
+}
+#match-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.single-match{
+    border: 4px solid #26528f;
+    padding: 20px;
+}
+.single-match i{
+    font-size: 40px;
+    padding: 0 20px 10px 20px;
+}
+.single-match h5{
+    margin-bottom: 10px;
+}
+.single-match p{
+    color: #60809C;
+    font-size: 14px;
+}
+.single-match:nth-child(2){
+    border: 4px solid white;
+}
+.first-single-match{
+    letter-spacing: 0.1em ;
+    line-height: 1.5;
+}
+/* match project section finish */
+
 
 
 
@@ -445,6 +482,16 @@ form p{
     }
     /* contact section finish */
 
+    /* match project section start */
+    #match-parent{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    }
+    /* match project section finish */
+
 /* about-single-items-parent code finish */
 }
 
@@ -520,6 +567,15 @@ form p{
     padding: 40px 50px;  
     }
     /* contact section finish */
+    /* match project section start */
+    #match-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+    margin-left: 70px;
+    margin-right: 70px;
+    }
+    /* match project section finish */
 /* about-single-items-parent code finish */
 }
     
