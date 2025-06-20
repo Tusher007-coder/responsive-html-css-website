@@ -407,6 +407,41 @@ form p{
 
 
 
+/* seventh section start */
+
+/* take care section start */
+#seventh-section{
+    padding: 100px 0;
+}
+#takeCare-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 30px;
+}
+.single-takeCare-imgbox{
+    width: 100%;
+}
+.single-takeCare-imgbox img{
+    width: 100%;
+}
+.single-takeCare h3{
+    font-size: 30px;
+}
+.single-takeCare p{
+    margin: 20px 0;
+}
+.single-takeCare ul li{
+    list-style-position: inside;
+    margin: 10px 0;
+}
+/* take care section finish */
+/* seventh section finish */
+
+
+
 
 
 
@@ -456,7 +491,7 @@ form p{
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     }
-
+    /* about-single-items-parent code finish */
     /* advise sec start */
     .advice-parent{
     display: block;
@@ -491,8 +526,21 @@ form p{
     margin-right: 50px;
     }
     /* match project section finish */
+/* seventh section start */
 
-/* about-single-items-parent code finish */
+    /* take care section start */
+    #takeCare-parent{
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;  
+    }
+    .single-takeCare{
+        margin-bottom: 40px;
+    }
+    /* take care section finish */
+/* seventh section finish */
+
+
 }
 
 
@@ -576,6 +624,18 @@ form p{
     margin-right: 70px;
     }
     /* match project section finish */
-/* about-single-items-parent code finish */
+/* seventh section start */
+    /* take care section start */
+    #takeCare-parent{
+    display: block;
+    margin-left: 70px;
+    margin-right: 70px;  
+    }
+    .single-takeCare{
+        margin-bottom: 70px;
+    }
+    /* take care section finish */
+/* seventh section finish */
+
 }
     
